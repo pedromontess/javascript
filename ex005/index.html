@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Verificador de Votos</title>
+</head>
+<body>
+    <h1>Digite sua idade para saber se pode votar</h1>
+    <input type="number" name="txtd" id="itxtd">
+    <input type="button" value="Conferir" onclick="conferir()">
+    <div id="res"></div>
+
+    <script>
+      function conferir() {
+        var txt = document.querySelector('input#itxtd')
+        var idade = Number(txt.value)
+        var res = document.querySelector('div#res')      
+          if(idade < 16) {
+            res.innerText = `Não vota, você tem ${idade} anos`
+          } else if (idade  < 18 || idade > 65) {
+            res.innerText = `Voto opcional, você tem ${idade} anos`
+          } else {
+            res.innerText = `Voto Obrigatorio, você tem ${idade} anos`
+          }
+      }
+
+    </script>
+
+
+</body>
+</html>

@@ -108,3 +108,26 @@ false || true > true
 3 operandos
    teste?true:false
    media >=7.0:"Aprovado":"Reprovado
+
+
+DOM (Document Object Model) 
+Árvore DOM
+ Selecionando DOM
+-Marca
+ getElementsByTagName() // da pra selecionar mais de um elemento
+-ID
+ getElementsbyID()
+-Nome
+ 
+-Classe
+ 
+-Seletor
+
+
+Condiçoes 
+condiçao simples
+if {}
+condiçao composta
+if{
+}else{}
+ 
