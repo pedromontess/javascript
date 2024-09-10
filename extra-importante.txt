@@ -15,9 +15,19 @@ Data Types:					+//concatenação ou adição    	String>Number // parserInt(n) 
 
 
 
-var = Evite usar, a menos que esteja lidando com código legado.
-let =  Use quando precisar de uma variável que pode mudar de valor ao longo do tempo.
-const = Use para valores que não devem mudar, como configurações ou valores fixos 1 2 3.
+var:
+
+Evite usar var, pois ele tem um comportamento de escopo menos previsível (escopo de função) e pode levar a bugs difíceis de encontrar. Use let ou const no lugar.
+Ele permite redeclaração e hoisting, o que pode causar confusões.
+let:
+
+Use let quando precisar de uma variável que pode mudar de valor ao longo do tempo.
+Tem escopo de bloco (ou seja, só existe dentro de {}).
+const:
+
+Use const para variáveis que não devem ser reatribuídas (mas o valor dentro de um objeto ou array ainda pode ser alterado).
+Também tem escopo de bloco.
+Ideal para configurações fixas, valores constantes ou objetos que não serão reatribuídos, como arrays e objetos..
 
 
 
@@ -131,3 +141,4 @@ condiçao composta
 if{
 }else{}
  
+condiçoes aninhadas
