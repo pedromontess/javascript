@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Descobrindo</title>
+</head>
+<body>  
+    <h1>Descobrindo se você é estrangreiro ou não</h1>
+    Digite seu País <input type="text" name="txtp" id="itxtp">
+    <input type="button" value="Descobrir" onclick="descobrir()">
+    <div id="res"></div>
+
+    <script> 
+      function descobrir () { 
+      var txt = document.querySelector ('input#itxtp')      
+      var pais = txt.value
+      var res = document.querySelector ('div#res')
+        if( pais.toLowerCase() === 'brasil') {
+          res.innerHTML = 'Você é Brasileiro'
+        } else {
+          res.innerHTML = 'Você é Estrangeiro'
+        }
+
+
+    }
+    </script>
+
+</body>
+</html>

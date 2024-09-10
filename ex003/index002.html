@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos DOM</title>
+  <style>
+    div#area {
+        background: green;
+        color: white;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        line-height: 200px;
+        width: 200px;
+        height: 200px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+  </style>
+</head>
+<body>
+    <div id="area">Interaja... </div>
+
+    <script>
+
+         var a = document.querySelector('div#area')
+         //manter o HTML limpo
+         a.addEventListener('click', clicar)
+         a.addEventListener('mouseenter', entrar)
+         a.addEventListener('mousedown', segurou)      
+         a.addEventListener('mouseout', saiu)
+
+        function clicar() {
+           a.innerText = 'Clicou'
+           a.style.background = 'purple'
+           
+        }
+        function entrar() {
+          a.innerText = 'Entrou'
+          a.style.background = 'black'
+          a.style.color = 'white'
+
+        }
+        function segurou() {
+          a.innerText = 'Esta segurando!'
+          a.style.background = 'yellow'
+          a.style.color = 'black'
+        }
+        function saiu () {
+          a.innerText = 'Saiu!'
+          a.style.background = 'blue'
+        }
+
+    </script>
+
+
+</body>
+</html>

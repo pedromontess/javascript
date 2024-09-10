@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <style>
+    body{
+       background-color: rgba(0, 0, 0, 0.582);
+       color: white;
+       font-family: Arial, Helvetica, sans-serif;
+       font-size: 18pt;
+    }
+  </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong></p>
+    <div id="msg">Clique em mim</div>
+
+    <script>
+        var p0 = document.getElementsByTagName('p') [0] //selecionei o primeiro p
+        var p1 = document.getElementsByTagName('p') [1]
+        var d = document.getElementById('msg')
+        var corpo = document.body
+        document.write(p0.innerText + ' novo <br/>')  //document.write
+        document.write(p1.innerHTML + '<br/>')
+        corpo.style.background = 'purple'
+        p0.style.background = 'black'
+        p0.style.color = 'blue'
+        d.style.color = 'green'
+        document.write(d.innerText + '<br/>')
+        alert(p1.innerText)
+        
+        //posso tambem por queryselector
+        var div = document.querySelector('div#msg')
+        document.write(div.innerText + ' aqui esta com o queryselector ')
+
+
+        
+    </script>
+</body>
+</html>

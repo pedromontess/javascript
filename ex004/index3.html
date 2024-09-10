@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sexo</title>
+</head>
+<body>
+    <h1>SEXO:</h1>
+    Digite seu sexo: <input type="text" name="txt" id="itxt">
+    <input type="button" value="Conferir" onclick="Conferiu()">
+    <div id="res"></div>
+    <script>
+      function Conferiu() { 
+        var txt = document.querySelector('input#itxt')
+        var sexo = txt.value.trim() // Remove espaços extras ao redor do valor
+        var res = document.querySelector('div#res')
+        
+        // Cria uma mensagem inicial
+        
+        var mensagem = `O seu sexo é ${sexo}. `
+        res.innerText = mensagem
+        
+        // Adiciona a mensagem com base no valor do input
+        if (sexo.toLowerCase() === 'masculino') { 
+          mensagem += 'Você é um homem!'
+        } else if (sexo.toLowerCase() === 'feminino') {
+          mensagem += 'Você é uma mulher!'
+        } else {
+          mensagem = 'Sexo não reconhecido.'
+        }
+        
+        
+      }
+    </script>
+</body>
+</html>

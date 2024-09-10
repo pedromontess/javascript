@@ -1,0 +1,110 @@
+Data Types:					+//concatenação ou adição    	String>Number // parserInt(n) //numero inteiro 6  parseFloat(n) //numero real 6.5 //Number(n) se vira pra fazer conversão
+//typeo	f									Number>String // String(n)  ou n.toString() 		
+ Number
+  -infinity
+  -NaN
+ string
+ boolean
+ null
+ undefined
+ object
+  -Array
+ function	
+
+
+
+
+
+var = Evite usar, a menos que esteja lidando com código legado.
+let =  Use quando precisar de uma variável que pode mudar de valor ao longo do tempo.
+const = Use para valores que não devem mudar, como configurações ou valores fixos 1 2 3.
+
+
+
+
+
+Formatações de String
+ -s.length //
+ -s.toUpperCase() //
+ -s.toLowerCase() //
+
+
+Formatações de Números
+var n1 = 1543.5
+ -n1.toFixed(2) // cadas decimais 1543.50
+ -n1.toFixed(2).replace ('.' , ',') // 1543,50
+ -n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) //R$ 1.545,50
+
+Operadores JS
+ aritiméticos
+  - 5 + 2 > 7    /*PRECEDÊNCIA () > ** > * / $ > + - */  
+  - 5 - 2 > 3
+  - 5 * 2 > 10 
+  - 5 / 2 > 2.5 divisão real
+  - 5 % 2 > 1 divisão inteira
+  - 5 ** 2 > 25 // potencia  5*5
+
+> var a = 5 + 3 // 8
+
+  > var b = a % 5 // 3
+
+  > var c = 5 * b ** 2 // 45
+
+  > var d = 10 - a / 2 // 6
+ 
+  > var e = 6 * 2 / d // 2
+
+  > var f = b % e + 4 / e // 3
+
+ atribuição Simples
+  
+
+  
+
+ Auto-atribuições
+  -var n = 3
+   n = +=4 // 7 
+   n = /= 2 // 3.5
+   n *= 4
+   n **=2
+   n %= 5
+incremento
+  var x = 5  simplificado
+  x = x + 1 // x++
+  x = x - 1 // x--				
+
+ relacionais
+  5 > 2 true // maior que
+  7 < 4 false // menor que
+  8 >= 8 true // maior ou igual a
+  9 <= 7 false // menor ou igual a
+  5 == 5 true // igual a
+  4 != 4 false // diferente de
+ identidade
+  5 == 5 true
+  5 == '5' true // o sinal nao testa o typeo
+  5 === '5' false // === testa se é identico
+  5 === 5 true
+  
+ lógicos
+!>&&>||
+  ! negação //não quero uma caneta AZUL. satisfeito com qualquer um menos azul
+  && conjunção //quero uma caneta AZUL E VERMELHA. satisfeito só com os dois
+  || dinsjunção //quero uma caneta AZUL OU Vermelha. satisfeito com qualquer um dos dois
+  
+  ! true ou false
+
+true && true > true 
+true && false > false
+false && false > false			Precedência GERAL : artimeticos > relacionais > logicos
+false && true > false
+
+true || true > true
+true || false > true
+false || false > false
+false || true > true
+
+ ternário
+3 operandos
+   teste?true:false
+   media >=7.0:"Aprovado":"Reprovado
