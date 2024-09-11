@@ -142,3 +142,29 @@ if{
 }else{}
  
 condiçoes aninhadas
+if {
+}else if {
+}else
+
+Repetiçoes
+while (condiçao){
+bloco vai executar enquanto for verdade
+ }
+do {
+teste logico primeiro executa depois
+}while {}
+
+for(inicio;teste;incremento){
+
+}
+
+Array
+ variaveis compostas
+  let frutas = ['maça','banana','laranja',]
+   console.log(frutas[0]) // maça
+
+
+num[3] = 6 // pra adicionar mais um valor nos vetores
+num.push(10) // adicionar na ultima cas
+num.sort() // ordenar
+num.indexOf(7) // buscar valores
