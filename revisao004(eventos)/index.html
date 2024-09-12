@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eventos </title>
+</head>
+<body>
+    <h1>Eventos</h1>
+    <p id="texto"></p>
+    <button onclick="clicou()"> Clique aqui</button>
+    <br> <br><br>
+    <select onchange="mudou()" name="" id="itens">
+      <option value="1">valor 1</option>
+      <option value="2">valor 2</option>
+      <option value="3">valor 3</option>
+      <option value="4">valor 4</option>
+      <option value="5">valor 5</option>
+    </select>
+
+
+    <button ondblclick="dblclicou()"> Clique duas vezes aqui</button>
+
+   <p>Campo Focado <input id="itxt" type="text" onfocus="foco()"> </p>
+   <p>Limpa Texto <input id="itxt1" type="text" onfocus="limpatxt()" value="ja vem c txt"></p>
+   <p>Saiu do foco <input onblur="saiu()" type="text"></p>
+   <p>Quando pressiona <input type="text" onkeypress="pressionou()"></p>
+    <script src="index.js"></script>
+</body>
+</html>
