@@ -7,13 +7,14 @@ function descobrir() {
   ajax.send();
 
   ajax.onload = function () {
-    // let alerta =   document.getElementById('texto').innerHTML = this.responseText
+    //transformei em obj
     let obj = JSON.parse(this.responseText);
+    //peguei os obj que eu queria
     let log = obj.logradouro;
     let loc = obj.localidade;
     let bairro = obj.bairro;
     let compl = obj.complemento;
-
+    //mandei mostrar como alerta
     alert(`${log} , ${loc} , ${bairro} , ${compl}`);
   };
 }
