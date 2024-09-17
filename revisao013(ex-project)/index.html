@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lista de Tarefas</title>
-  <link rel="stylesheet" href="index.css">
-</head>
-<body>  
-      <h1>Lista de Tarefas</h1>
-      <input type="text" placeholder="Digite a tarefa"> <button>Adicionar</button>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lista de Tarefas</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/@mdi/font/css/materialdesignicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1>Lista de Tarefas</h1>
+    <input type="text" id="itxt" placeholder="Digite a tarefa" />
 
+    <button onclick="AdicionarTarefa()" class="add" id="ibutao">
+      Adicionar
+    </button>
 
-  <script src="index.js"></script>
-</body>
+    <main id="AreaLista">
+      <!-- As tarefas serão adicionadas aqui dinamicamente -->
+    </main>
+
+    <script src="index.js"></script>
+  </body>
 </html>

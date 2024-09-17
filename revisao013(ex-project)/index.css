@@ -1,38 +1,114 @@
 @charset "UTF-8";
+
+/* Reseta margens e paddings para todos os elementos */
 * {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-family: Arial, Helvetica, sans-serif;
   text-align: center;
 }
+
+/* Estilo para o corpo da página */
 body {
   background-color: rgba(211, 211, 211, 0.521);
 }
+
+/* Estilo para o título da página */
 h1 {
-  text-align: center;
   margin-top: 50px;
   padding-bottom: 50px;
 }
+
+/* Estilo para o campo de input */
 input {
   width: 60%;
-  height: 105px;
-  border: 0px;
+  height: 50px;
+  border: 0;
   border-radius: 10px;
+  padding: 0 15px;
+  font-size: 1em;
 }
 
+/* Placeholder do input */
 input::placeholder {
-  font-size: 2em;
-  text-align: left;
-  padding: 150px;
+  font-size: 1em;
+  color: #888;
 }
 
-button {
-  height: 100px;
-  width: 200px;
-  border: 0px;
+/* Estilo para o botão de adicionar tarefa */
+button.add {
+  height: 50px;
+  width: 150px;
+  border: 0;
   border-radius: 10px;
   background-color: green;
-  box-shadow: 0px;
-  font-size: 1.5em;
   color: white;
+  font-size: 1em;
+  cursor: pointer;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-weight: bolder;
+}
+
+/* Estilo para o container de tarefas */
+main {
+  display: flex;
+  flex-flow: row wrap;
+  width: 60%;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Estilo para cada item de tarefa */
+.item {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  height: 60px;
+  width: 100%;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Estilo para o ícone dentro do item */
+.item-icone {
+  flex: 20%;
+  text-align: center;
+  font-size: 1.5rem; /* Ajustado para melhor visibilidade */
+}
+
+/* Estilo para o nome da tarefa */
+.item-nome {
+  flex: 50%;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+/* Estilo para o botão dentro do item */
+.item-botao {
+  flex: 25%;
+  text-align: right;
+}
+
+/* Estilo para o botão de deletar tarefa */
+.delete {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+}
+
+/* Cor para o ícone de tarefa marcada */
+i.mdi-check-circle-outline {
+  color: green;
+}
+
+/* Estilo para o nome da tarefa quando marcada */
+.item-nome-marcado {
+  text-decoration: line-through;
+  color: grey;
 }
